@@ -1,0 +1,51 @@
+.titlebar{
+	width:100%;
+	font-family: cursive;
+	font-size: 36;
+	position: relative;
+	text-align: center;
+	background-color: rgb(204, 153, 0);
+
+}
+
+.backgroundcolor{
+	background-color: rgb(226, 198, 112);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mapcontainer{
+	width:100%;
+	position: relative;
+}	
+.image{
+	width: 100vw;
+
+
+}
+.pointer{
+	max-width: 25px;
+	z-index: 2;
+	position:absolute;	
+}
+
+.textarea{
+	width: 200px;
+	height: 200px;
+}
+
+.textBox {
+	z-index: 2;
+	position: absolute;
+}

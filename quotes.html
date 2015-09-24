@@ -1,0 +1,53 @@
+<html ng-app="quoteApp"lang='en'>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     	<title>InspirationalQuotes</title>
+     	<link rel="stylesheet" href="quotes.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" type="text/javascript"></script>
+      <script src="quotes.js" type="text/javascript"></script>
+  </head>
+  <body ng-controller="mainController" class="backgroundcolor"> 
+    <div class="titlebar">
+  	   <h1>Inspirational Quotes</h1>
+    </div>
+
+    <div>
+      <p>Type in your quote</p>
+      <p>Quote: {{ typeQuote }}</p>
+      <p>Quote<input type="text" ng-model="typeQuote"></p>
+    </div>
+
+      <p>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</p>
+
+    <div>
+      <p>Type in the Author</p>
+      <p>Author: {{ typeAuthor }}</p>
+      <p>Author<input type="text" ng-model="typeAuthor"></p>
+    </div>
+
+    <div>
+
+      <p>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</p>
+
+    </div>
+
+    <button ng-click="submitQuote()">Submit</button>
+
+    <div ng-repeat="quote in quotesArray">
+          <p>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</p>
+          <p>{{quote.text}}</p>
+          <p>{{quote.author}}</p>
+
+    </div>
+
+
+<!--     <div>
+      <p>Type in the author</p>
+      <p>Author: {{ typeAuthor }}</p>
+      <p>Author<input type="text" ng-model="typeAuthor"></p>
+    </div> -->
+
+  </body>
+
+</html>
